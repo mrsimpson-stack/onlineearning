@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABB - Withdraw</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1 class="logo">ABB Withdraw</h1>
+                <div class="user-info">
+                    <span id="user-email">user@example.com</span> | 
+                    <span id="user-phone">+256 7XX XXX XXX</span>
+                </div>
+            </div>
+            <button class="logout-btn btn-primary">Logout</button>
+        </div>
+
+        <div class="form-container">
+            <div class="action-card">
+                <h2>Withdraw Funds</h2>
+                <p style="color: #666; margin-bottom: 20px;">Available Balance: <strong id="available-balance">UGX 0.00</strong></p>
+                
+                <form id="withdrawForm">
+                    <div class="form-group">
+                        <label for="withdrawAmount">Amount (UGX)</label>
+                        <input type="number" id="withdrawAmount" min="1000" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mobileMoney">Mobile Money</label>
+                        <select id="mobileMoney" required>
+                            <option value="">Select network</option>
+                            <option value="mtn">MTN Mobile Money</option>
+                            <option value="airtel">Airtel Money</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" id="phoneNumber" placeholder="e.g. 0772123456" required>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary" style="background-color: var(--secondary-color);">Request Withdrawal</button>
+                </form>
+            </div>
+            
+            <div class="action-card" style="margin-top: 20px;">
+                <h3>Withdrawal Policy</h3>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li>Minimum withdrawal: UGX 1,000</li>
+                    <li>Processing time: 1-24 hours</li>
+                    <li>Fees: 1% (max UGX 2,500)</li>
+                    <li>Withdrawals are processed Mon-Sun, 8AM-8PM</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="nav-menu">
+            <a href="dashboard.html" class="nav-link">Dashboard</a>
+            <a href="transactions.html" class="nav-link">Transactions</a>
+            <a href="invest.html" class="nav-link">Invest</a>
+            <a href="account.html" class="nav-link">Account</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

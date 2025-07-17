@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABB - Transactions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1 class="logo">ABB Transactions</h1>
+                <div class="user-info">
+                    <span id="user-email">user@example.com</span> | 
+                    <span id="user-phone">+256 7XX XXX XXX</span>
+                </div>
+            </div>
+            <button class="logout-btn btn-primary">Logout</button>
+        </div>
+
+        <div class="action-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h2>Transaction History</h2>
+                <div>
+                    <select id="filterType" style="padding: 8px; border-radius: 5px; border: 1px solid #ddd;">
+                        <option value="all">All Transactions</option>
+                        <option value="deposit">Deposits</option>
+                        <option value="withdrawal">Withdrawals</option>
+                        <option value="investment">Investments</option>
+                    </select>
+                </div>
+            </div>
+            
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="5" style="text-align: center;">No transactions found</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+                <button class="btn-primary" disabled>Previous</button>
+                <span>Page 1 of 1</span>
+                <button class="btn-primary" disabled>Next</button>
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="nav-menu">
+            <a href="dashboard.html" class="nav-link">Dashboard</a>
+            <a href="transactions.html" class="nav-link">Transactions</a>
+            <a href="invest.html" class="nav-link">Invest</a>
+            <a href="account.html" class="nav-link">Account</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

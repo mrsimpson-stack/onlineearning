@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABB - Invest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1 class="logo">ABB Invest</h1>
+                <div class="user-info">
+                    <span id="user-email">user@example.com</span> | 
+                    <span id="user-phone">+256 7XX XXX XXX</span>
+                </div>
+            </div>
+            <button class="logout-btn btn-primary">Logout</button>
+        </div>
+
+        <div class="action-card">
+            <h2>Investment Plans</h2>
+            <p style="color: #666; margin-bottom: 20px;">Choose a plan that fits your goals</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
+                <!-- Basic Plan -->
+                <div style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; text-align: center;">
+                    <h3>Basic</h3>
+                    <p style="font-size: 24px; font-weight: bold; color: var(--primary-color); margin: 10px 0;">5% Daily</p>
+                    <p style="color: #666; margin-bottom: 15px;">For 14 days</p>
+                    <ul style="text-align: left; margin-bottom: 20px; padding-left: 20px;">
+                        <li>Min: UGX 10,000</li>
+                        <li>Max: UGX 100,000</li>
+                        <li>Capital returned</li>
+                    </ul>
+                    <button class="btn-primary" style="width: 100%;">Select Plan</button>
+                </div>
+                
+                <!-- Premium Plan -->
+                <div style="border: 1px solid var(--primary-color); border-radius: 8px; padding: 20px; text-align: center; position: relative;">
+                    <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background-color: var(--primary-color); color: white; padding: 3px 10px; border-radius: 20px; font-size: 12px;">POPULAR</div>
+                    <h3>Premium</h3>
+                    <p style="font-size: 24px; font-weight: bold; color: var(--primary-color); margin: 10px 0;">8% Daily</p>
+                    <p style="color: #666; margin-bottom: 15px;">For 21 days</p>
+                    <ul style="text-align: left; margin-bottom: 20px; padding-left: 20px;">
+                        <li>Min: UGX 50,000</li>
+                        <li>Max: UGX 500,000</li>
+                        <li>Capital returned</li>
+                        <li>24/7 Support</li>
+                    </ul>
+                    <button class="btn-primary" style="width: 100%;">Select Plan</button>
+                </div>
+                
+                <!-- VIP Plan -->
+                <div style="border: 1px solid var(--warning-color); border-radius: 8px; padding: 20px; text-align: center;">
+                    <h3>VIP</h3>
+                    <p style="font-size: 24px; font-weight: bold; color: var(--warning-color); margin: 10px 0;">12% Daily</p>
+                    <p style="color: #666; margin-bottom: 15px;">For 30 days</p>
+                    <ul style="text-align: left; margin-bottom: 20px; padding-left: 20px;">
+                        <li>Min: UGX 200,000</li>
+                        <li>Max: Unlimited</li>
+                        <li>Capital returned</li>
+                        <li>Personal manager</li>
+                        <li>Priority withdrawals</li>
+                    </ul>
+                    <button class="btn-primary" style="width: 100%; background-color: var(--warning-color);">Select Plan</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="action-card" style="margin-top: 20px;">
+            <h3>Active Investments</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Amount</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Profit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="5" style="text-align: center;">No active investments</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="nav-menu">
+            <a href="dashboard.html" class="nav-link">Dashboard</a>
+            <a href="transactions.html" class="nav-link">Transactions</a>
+            <a href="invest.html" class="nav-link">Invest</a>
+            <a href="account.html" class="nav-link">Account</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
